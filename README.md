@@ -11,7 +11,10 @@ Moment integration allows you to specify date format.
 Based on tables, you can make a calendar with several months that render to print.
 
 ### Events 
-Emits 'monthclicked' with the starting date of the month, and
+Emits 'monthclicked' with the starting date of the month.
+
+This allows you to load more data from server, etc.
+
 Emits 'dateclicked' with the date string that was clicked.  
 
 This allows you to use model dialog, or populate an edit form.
