@@ -19,6 +19,6 @@ This allows you to load more data from server, etc.
 
 This allows you to use model dialog, or populate an edit form.
 
-#### Screen shot of demo:
+#### Demo using bootstrap.css
 
 ![] (vue-fa-calendar-demo1.jpg)
