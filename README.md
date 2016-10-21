@@ -13,12 +13,13 @@ Based on tables, you can make a calendar with several months that render to prin
 ### Events 
 ##### Emits 'monthclicked' with the starting date of the month.
 
-This allows you to load more data from server, etc.
+ This allows you to load more data from server, etc.
 
 ##### Emits 'dateclicked' with the date string that was clicked.  
 
-This allows you to use model dialog, or populate an edit form.
+ This allows you to use model dialog, or populate an edit form.
 
-#### Demo using bootstrap.css
+### Demo using bootstrap.css 
+( note Icons and selected days in each instance )
 
 ![] (vue-fa-calendar-demo1.jpg)
