@@ -9,38 +9,31 @@
      <!-- choose whatever css classes you want -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> 
 
+     <style type="text/css">
+        .chocClass { color: chocolate }
+     </style>  
+
 </head>
 
  
 
 <body>
   <div id="example" >
-    
- <div class="row">
-   <div class="col-lg-6">
-    <fa-month-table month-date="03/02/2016" 
-             :table-class="tbleClss" 
-             ></fa-month-table>
-   </div><div class="col-lg-6">
 
-    <fa-month-table month-date="4/02/2016" 
-              :table-class="tbleClss" :special-days="spDays" 
-             ></fa-month-table>
-           </div>
-</div>
-
- <div class="row">
-   <div class="col-lg-6">
-    <fa-month-table month-date="09/02/2016"></fa-month-table>
+<div class="row"> <div class="col-lg-6">
+    <fa-month-table month-date="04/02/2016"></fa-month-table>
    </div><div class="col-lg-6">
-    <fa-month-table month-date="10/02/2016"></fa-month-table>
+    <fa-month-table month-date="05/02/2016"></fa-month-table>
+</div></div>
+       
+<div class="row">  <div class="col-lg-6">
+    <fa-month-table month-date="08/02/2016" :table-class="tbleClss"></fa-month-table>
+   </div><div class="col-lg-6">
+    <fa-month-table month-date="9/02/2016"  :table-class="tbleClss" :special-days="spDays"></fa-month-table>
 </div></div>
   
   </div>
 
-<style type="text/css">
-  .chocClass { color: chocolate }
-</style>  
 
 <script>
    var v1 = new Vue({
