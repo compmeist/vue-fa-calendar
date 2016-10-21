@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+     <link href="../csss/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" /> 
+     <script src="../js/moment/moment.min.js"></script>
+     <script src="../js/vue2/vue.js"></script>
+     <script src="vue-fa-calendar.js"></script>
+    <link href="../Bootstrap-3/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> 
+</head>
+
+ 
+
+<body>
+  <div id="example" >
+    
+ <div class="row">
+   <div class="col-lg-6">
+    <fa-month-table month-date="03/02/2016" 
+             :table-class="tbleClss" 
+             ></fa-month-table>
+   </div><div class="col-lg-6">
+
+    <fa-month-table month-date="4/02/2016" 
+              :table-class="tbleClss" :special-days="spDays" 
+             ></fa-month-table>
+           </div>
+</div>
+
+ <div class="row">
+   <div class="col-lg-6">
+    <fa-month-table month-date="09/02/2016"></fa-month-table>
+   </div><div class="col-lg-6">
+    <fa-month-table month-date="10/02/2016"></fa-month-table>
+</div></div>
+  
+  </div>
+
+<style type="text/css">
+  .chocClass { color: chocolate }
+</style>  
+
+<script>
+   var v1 = new Vue({
+   	  el:'#example'
+      ,data: { 
+        tbleClss: 'table table-striped'
+        ,spDays: [{ date:'04/01/2016',title:'April Fools',faIconClass:'fa fa-smile-o'},
+                { date:'9/9/2016',text:'Moms BD',title:'Be sure to send present',faIconClass:'fa fa-fire-extinguisher',cellClass:'chocClass'}
+        ]
+      }
+   });
+</script>
